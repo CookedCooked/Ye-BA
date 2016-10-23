@@ -8,6 +8,9 @@ var bodyParser = require('body-parser');
 var routes = require('./server/routes/index');
 var users = require('./server/routes/users');
 
+// .ejs后缀替换成.html
+var ejs = require('ejs');
+
 var app = express();
 
 // view engine setup

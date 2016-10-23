@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第一个页面</title>
+    <script>
+        window.onload = function(){
+            // 页面加载完加载
+            var body = document.getElementsByTagName('body')[0];
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'build/hello.build.js';
+
+            body.appendChild(script);
+        }
+    </script>
+</head>
+<body id="app">
+    {{msg}}
+</body>
+</html>
